@@ -51,10 +51,11 @@
 
 		function moveButton() {
 			var button = document.querySelector('button');
-			var marginTop = Math.random() * 500 + "px";
-			var marginLeft = Math.random() * 500 + "px";
-			button.style.marginTop = marginTop;
-			button.style.marginLeft = marginLeft;
+			const newMarginTop = Math.random() * (window.innerHeight - button.clientHeight) + 'px';
+  			const newMarginLeft = Math.random() * (window.innerWidth - button.clientWidth) + 'px';
+
+  			button.style.marginTop = newMarginTop;
+  			button.style.marginLeft = newMarginLeft;
 		}
 	</script>
 
