@@ -36,7 +36,7 @@
 		function setButtonTimeout() {
 			if (level <= 6) {
 				var timeout = (7 - level) * 100;
-                console.log("Button will move in " + timeout + " milliseconds.");
+                
 				setTimeout(function() {
 					moveButton();
 					setButtonTimeout();
@@ -51,8 +51,8 @@
 
 		function moveButton() {
 			var button = document.querySelector('button');
-			var marginTop = Math.random() * 300 + "px";
-			var marginLeft = Math.random() * 300 + "px";
+			var marginTop = Math.random() * 500 + "px";
+			var marginLeft = Math.random() * 500 + "px";
 			button.style.marginTop = marginTop;
 			button.style.marginLeft = marginLeft;
 		}
